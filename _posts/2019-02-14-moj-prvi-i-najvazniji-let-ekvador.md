@@ -1,15 +1,19 @@
 ---
-title: 'Demo Post'
-date: 2018-06-30 00:00:00
-featured_image: '/images/demo/demo-square.jpg'
-excerpt: This page is a demo that shows everything you can do inside portfolio and blog posts. We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
+title: 'Prvi i najvažniji let - Ekvador'
+date: 2019-02-14 00:00:00
+featured_image: '/images/ecuador/montanita/house.jpg'
+excerpt: 'Nekada je samo 30 dana dovoljno da čovek nauči da sagleda život iz nekog drugog ugla - kako bi se reklo: "muka čoveka na sve natera", a ovo je priča o tome.'
 ---
 
-![](/images/demo/demo-landscape.jpg)
+![moj prvi let](/images/ecuador/flight.png)
 
-## Demo content
+Nekada godine prođu dok spavamo ušuškani u komforu naših izolovanih života, a da ni ne primetimo.
 
-This page is a demo that shows everything you can do inside portfolio and blog posts.
+> "Ljudi zaboravljaju godine, ali pamte trenutke." - Ann Beattie
+
+Ovo putovanje svedoči upravo o tome. Sada  kada sam već obišao skoro celu Južnu Ameriku i proveo tu više od godinu dana, bez mnogo razmišljanja mogu da kažem da je ovo putovanje moja najveća životna avantura koju sam iskusio za ovih 26 godina života, a proživeo sam ih mnogo.
+
+Prvo putovanje avionom. Od uzbuđenja nisam mogao oka da sklopim! Gotovo sve vreme sam gledao avion kako se pomera mic po mic preko ogromnog Atlantskog okeana. Nekad bi mi se učinilo da se ne pomera uopšte, koliko je zapravo ogroman Atlantski okean. Let let Beograd -> Quito (prestonica Ekvadora) je ukupno trajao 28h sa tri presedanja.
 
 We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
 

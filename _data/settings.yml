@@ -1,6 +1,6 @@
 basic_settings:
   site_title: globallama
-  site_tagline: '"Dom je tamo, gde tvoja priča počinje." - Annie Danielson.'
+  site_tagline: '"Dom je tamo, gde tvoja priča počinje." - Annie Danielson'
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -12,9 +12,15 @@ menu_settings:
   menu_items:
     - title: 'Poslednje'
       url: '/'
-    - title: 'Putovanja'
-      url: '/travels/'
+    - title: 'Avanture'
+      url: '/adventures/'
+    - title: 'Zemlje'
+      url: '/countries/'
+    - title: 'Gradovi'
+      url: '/cities/'
     - title: 'O meni'
+    - title: 'Digitalno nomadstvo'
+      url: '/digital-nomad/'
       url: '/about'
     - title: 'Kontakt'
       url: '/contact'
@@ -29,11 +35,11 @@ contact_settings:
   send_button_text: 'Pošalji poruku'
 
 social_settings:
-  facebook_url: ''
+  facebook_url: 'https://www.facebook.com/globallama/'
   twitter_url: ''
-  instagram_url: ''
+  instagram_url: 'https://www.instagram.com/globallama/'
   snapchat_url: ''
-  youtube_url: ''
+  youtube_url: 'https://www.youtube.com/globallama/'
   google-plus_url: ''
   vimeo_url: ''
   pinterest_url: ''
