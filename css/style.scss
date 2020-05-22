@@ -109,6 +109,10 @@ $p-weight: {{ site.data.settings.font_settings.p.weight }};
 $p-spacing: {{ site.data.settings.font_settings.p.letter_spacing }}em;
 $p-lineheight: {{ site.data.settings.font_settings.p.line_height }};
 
+$strong-medium: {{ site.data.settings.font_settings.strong.medium_size }}px;
+$strong-line-thickness: {{ site.data.settings.font_settings.strong.line_thickness }};
+$strong-line-style: {{ site.data.settings.font_settings.strong.line_style }};
+
 $blockquote-small: {{ site.data.settings.font_settings.blockquote.small_size }}px;
 $blockquote-medium: {{ site.data.settings.font_settings.blockquote.medium_size }}px;
 $blockquote-large: {{ site.data.settings.font_settings.blockquote.large_size }}px;
