@@ -1,6 +1,6 @@
 ---
 title: 'Prvi let u svet - Kito, Ekvador'
-date: 2019-02-14 00:00:00
+date: 2020-05-22 00:00:00
 featured_image: '/images/ecuador/quito/cover.svg'
 excerpt: 'Ovo je priča kako je to kada se nađete praktično sami i bespomoćni nigde druge nego na
 obali Ekvadora hiljadama kilometara daleko od naše male zemlje...'
@@ -14,7 +14,7 @@ obali Ekvadora hiljadama kilometara daleko od naše male zemlje...'
 
 <center>Let Barselona - Bogota, jedno od presedanja na svom prvom letu ka Ekvadoru (slika sa ekrana na sedištu)</center>
 
-**Prvo putovanje avionom**. Obično kada pitam prijatelje kako je izgledao njihov prvi let, često ne mogu da se sete jer je bio davno, ili je to bio let u sklopu letovanja za Grčku ili Crnu Goru. Ja doduše imam malo drugačiji odgovor na to pitanje, ni Podgorica ni Santorini nego [Kito (Quito), prestonica Ekvadora](https://goo.gl/maps/qoFWyRUv6AKqgWGy9). Let Beograd - Kito ukupno je trajao 28h sa tri presedanja prvo Beograd - Rim, potom Rim - Barselona, zatim Barselona - Bogota da bi na kraju iz Bogote leteo direktno za Kito.
+**Prvo putovanje avionom**. Obično kada pitam prijatelje kako je izgledao njihov prvi let, često ne mogu da se sete jer je bio davno, ili je to bio let u sklopu letovanja za Grčku ili Crnu Goru. Ja doduše imam malo drugačiji odgovor na to pitanje, niti Podgorica niti Santorini nego [Kito (Quito), prestonica Ekvadora](https://goo.gl/maps/qoFWyRUv6AKqgWGy9). Let Beograd - Kito trajao je ukupno 28h sa tri presedanja prvo Beograd - Rim, potom Rim - Barselona, zatim Barselona - Bogota da bi na kraju iz Bogote leteo direktno za Kito.
 
 <div class="gallery" data-columns="1">
 	<img src="/images/ecuador/quito/quito-wide-1.jpg"/>
