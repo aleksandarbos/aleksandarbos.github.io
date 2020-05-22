@@ -30,9 +30,9 @@ grid_settings:
   grid_spacing: 10
 
 contact_settings:
-  form_action: ''
+  form_action: 'mailto:aca@doctor.com'
   confirmation_url: '/thanks'
-  email_subject: 'Kontakt forma'
+  email_subject: 'globallama.com - nova poruka'
   send_button_text: 'Pošalji poruku'
 
 social_settings:

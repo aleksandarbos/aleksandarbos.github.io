@@ -1,10 +1,11 @@
 ---
-title: Contact
-subtitle: Journal comes with a built-in contact form, that's free and easy to set up.
+title: Kontakt
+subtitle: Želite da mi pišete, nema problema! Popunite kontakt formu i očekujte odgovor.
 description: A stunning personal blog Jekyll theme with an image-focused design.
-featured_image: /images/demo/demo-portrait.jpg
+featured_image: /images/shared/contact.jfif
 ---
 
-{% include contact-form.html %}
+Ukoliko ste primetili neku pravopisnu ili stilsku grešku, ili želite da podelite neka svoja
+iskustva i utiske samnom, slobodno popunite formu, gledaću da odgovorim u što skorije vreme.
 
-We've made a contact form that you can use with [Formspree](https://formspree.io/create/jekyllthemes) to handle up to 50 submissions per month for free. You could also easily switch out the end-point to use another contact form service.
+{% include contact-form.html %}
