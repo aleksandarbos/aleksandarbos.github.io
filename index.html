@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aleksandar Bosnjak</title>
+    <link
+      rel="stylesheet"
+      href="/theme/css/custom.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- <canvas id="animation-canvas"></canvas> -->
+    <!-- <script src="/theme/js/animation.js"></script> -->
+    <div class="content"><div class="info-panel">
+  <h1>Aleksandar Bosnjak</h1>
+  <div class="title">10y+ Full Stack Dev Experience</div>
+
+  <p>
+    Exploring the intersection of mathematics, art, and code. Creating digital
+    experiences that blend beauty with functionality. Based in Novi Sad, Serbia.
+  </p>
+
+  <div class="links">
+    <a href="/blog">Blog</a>
+    <a href="/projects">Projects</a>
+    <a href="/about">About</a>
+  </div>
+
+  <div class="social-links">
+    <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn">
+      <i data-lucide="linkedin"></i>
+    </a>
+    <a href="https://github.com/yourusername" aria-label="GitHub">
+      <i data-lucide="github"></i>
+    </a>
+    <a
+      href="https://stackoverflow.com/users/youruserid"
+      aria-label="Stack Overflow"
+    >
+      <i data-lucide="layers"></i>
+    </a>
+    <a href="mailto:your.email@example.com" aria-label="Email">
+      <i data-lucide="mail"></i>
+    </a>
+  </div>
+</div>
+</div>
+    <div id="sketch-container"></div>
+    <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
+    <script>
+      let t = 0;
+
+      function a(x, y) {
+        let k = x / 8 - 25;
+        let e = y / 8 - 25;
+        let d = mag(k, e) ** 2 / 99;
+        let q = x / 3 + ((k * 0.5) / cos(y * 5)) * sin(d * d - t);
+        let c = d / 2 - t / 8;
+        return [
+          q * sin(c) + e * sin(d + k - t) + 200,
+          (q + y / 8 + d * 9) * cos(c) + 200,
+        ];
+      }
+
+      function setup() {
+        let canvas = createCanvas(windowWidth, windowHeight);
+        canvas.parent("sketch-container");
+      }
+
+      function draw() {
+        background("#0B1215");
+        stroke(255, 96);
+
+        for (let y = 99; y < 300; y += 5) {
+          for (let x = 99; x < 300; x++) {
+            let pos = a(x, y);
+            point(pos[0], pos[1]);
+          }
+        }
+
+        t += PI / 60;
+      }
+
+      function windowResized() {
+        resizeCanvas(windowWidth, windowHeight);
+      }
+    </script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
