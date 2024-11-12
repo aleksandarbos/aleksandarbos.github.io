@@ -83,9 +83,8 @@ body {
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .content {
-    align-items: flex-start;
-    padding-top: 33vh; /* This puts the panel roughly 2/3 down */
     margin: 0;
+    align-items: end;
   }
 
   .info-panel {
