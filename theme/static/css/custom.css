@@ -1,16 +1,27 @@
 /* theme/static/css/custom.css */
+:root {
+  --main-bg-color: #0b1215;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: system-ui, -apple-system, sans-serif;
-  background: #1a1a1a;
+  background: var(--main-bg-color);
   color: #ffffff;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
+#sketch-container {
+  justify-content: center;
+  border: #fff 1px;
+}
+
+#sketch-container,
 #animation-canvas {
   position: fixed;
   top: 0;
@@ -20,18 +31,76 @@ body {
   z-index: -1;
 }
 
+#sketch-container canvas {
+  position: absolute !important;
+}
+
 .content {
   width: 100%;
-  max-width: 800px;
-  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.142);
+  padding-top: 1.5rem;
+}
+
+.social-links a {
+  align-self: flex-end;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.social-links a:hover {
+  opacity: 1;
 }
 
 .info-panel {
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0); */
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .content {
+    align-items: flex-start;
+    padding-top: 33vh; /* This puts the panel roughly 2/3 down */
+    margin: 0;
+  }
+
+  .info-panel {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .social-links {
+    gap: 1.2rem;
+  }
 }
 
 h1 {

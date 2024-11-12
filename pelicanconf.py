@@ -15,13 +15,17 @@ THEME = 'theme'
 THEME_STATIC_DIR = 'theme'
 
 # URL Settings
-ARTICLE_URL = 'blog/{slug}'
+ARTICLE_URL = 'blog/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
+
+ARTICLES_SAVE_AS = 'blog/index.html'
+ARTICLES_URL = 'blog/'
+
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
 
 # Direct Templates
-DIRECT_TEMPLATES = ['index']
+DIRECT_TEMPLATES = ['index', 'articles']
 INDEX_SAVE_AS = 'index.html'
 
 # Disable Default Pages
