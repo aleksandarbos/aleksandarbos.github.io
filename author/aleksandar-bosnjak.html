@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="/theme/css/custom.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script> -->
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
@@ -19,7 +19,7 @@
   <div class="title">10y+ Full Stack Dev Experience</div>
 
   <p>
-    Exploring the intersection of mathematics, art, and code. Creating digital
+    Exploring the intersection of science, art, and code. Creating digital
     experiences that blend beauty with functionality. Based in Novi Sad, Serbia.
   </p>
 
@@ -30,63 +30,34 @@
   </div>
 
   <div class="social-links">
-    <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn">
+    <a href="https://linkedin.com/in/aleksandarbosnjak" aria-label="LinkedIn">
       <i data-lucide="linkedin"></i>
     </a>
-    <a href="https://github.com/yourusername" aria-label="GitHub">
+    <a href="https://github.com/aleksandarbos" aria-label="GitHub">
       <i data-lucide="github"></i>
     </a>
     <a
-      href="https://stackoverflow.com/users/youruserid"
+      href="https://stackoverflow.com/users/5736491/aleksandarbos"
       aria-label="Stack Overflow"
     >
       <i data-lucide="layers"></i>
     </a>
-    <a href="mailto:your.email@example.com" aria-label="Email">
+    <a href="mailto:aleksandarbos.ns@gmail.com" aria-label="Email">
       <i data-lucide="mail"></i>
     </a>
   </div>
 </div>
 </div>
-    <div id="sketch-container"></div>
+    <!-- <div id="sketch-container"></div> -->
+    <canvas id="glCanvas"></canvas>
+
     <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
+    <script src="/theme/js/jellyfish.js"></script>
     <script>
-      let t = 0;
-
-      function a(x, y) {
-        let k = x / 8 - 25;
-        let e = y / 8 - 25;
-        let d = mag(k, e) ** 2 / 99;
-        let q = x / 3 + ((k * 0.5) / cos(y * 5)) * sin(d * d - t);
-        let c = d / 2 - t / 8;
-        return [
-          q * sin(c) + e * sin(d + k - t) + 200,
-          (q + y / 8 + d * 9) * cos(c) + 200,
-        ];
-      }
-
-      function setup() {
-        let canvas = createCanvas(windowWidth, windowHeight);
-        canvas.parent("sketch-container");
-      }
-
-      function draw() {
-        background("#0B1215");
-        stroke(255, 96);
-
-        for (let y = 99; y < 300; y += 5) {
-          for (let x = 99; x < 300; x++) {
-            let pos = a(x, y);
-            point(pos[0], pos[1]);
-          }
-        }
-
-        t += PI / 60;
-      }
-
-      function windowResized() {
-        resizeCanvas(windowWidth, windowHeight);
-      }
+      // Initialize the jellyfish animation
+      document.addEventListener("DOMContentLoaded", function () {
+        initJellyfish("glCanvas");
+      });
     </script>
     <script>
       lucide.createIcons();
