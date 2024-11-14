@@ -1,6 +1,4 @@
 .project-card {
-  display: flex;
-  flex-direction: column;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 0.75rem;
   overflow: hidden;
@@ -15,16 +13,13 @@
 
 .project-thumbnail {
   width: 100%;
-  height: 200px; /* Fixed height for consistency */
-  object-fit: cover; /* This maintains aspect ratio while covering the space */
+  height: 200px;
+  object-fit: cover;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-content {
   padding: 1.5rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .project-content h2 {
@@ -33,7 +28,7 @@
 }
 
 .project-content p {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0 0;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
 }
