@@ -8,28 +8,177 @@
       rel="stylesheet"
       href="/theme/css/custom.css"
     />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script> -->
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <!-- <canvas id="animation-canvas"></canvas> -->
-    <!-- <script src="/theme/js/animation.js"></script> -->
-    <div class="content"><div class="info-panel">
-  <h1>About</h1>
-  <p>Your about page content here...</p>
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="vertical-nav">
+      <a href="/" class="nav-icon" title="Home">
+        <i data-lucide="home"></i>
+      </a>
+      <a href="/about/" class="nav-icon" title="About">
+        <i data-lucide="user"></i>
+      </a>
+      <a href="/projects/" class="nav-icon" title="Projects">
+        <i data-lucide="folder"></i>
+      </a>
+      <a href="/blog/" class="nav-icon" title="Blog">
+        <i data-lucide="rss"></i>
+      </a>
+    </nav>
+
+    <div class="content"><main class="about-container">
+  <div class="content-wrapper info-panel">
+    <header class="page-header">
+      <h1>About Me</h1>
+    </header>
+
+    <div class="about-content">
+      <div class="profile-section">
+        <img
+          src="/images/profile.jpeg"
+          alt="Profile Picture"
+          class="profile-image"
+        />
+        <div class="bio-section"><p>Your bio text goes here...</p></div>
+        <div class="social-links">
+          <a
+            href="https://linkedin.com/in/aleksandar-bosnjak"
+            aria-label="LinkedIn"
+          >
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="https://github.com/aleksandarbos" aria-label="GitHub">
+            <i data-lucide="github"></i>
+          </a>
+          <a
+            href="https://stackoverflow.com/users/5736491/aleksandarbos"
+            aria-label="Stack Overflow"
+          >
+            <i data-lucide="layers"></i>
+          </a>
+          <a href="mailto:aleksandarbos.ns@gmail.com" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="skills-section">
+        <h2>Technologies & Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/python/white"
+              alt="Python"
+              class="skill-icon"
+            />
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/javascript/white"
+              alt="JavaScript"
+              class="skill-icon"
+            />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/typescript/white"
+              alt="TypeScript"
+              class="skill-icon"
+            />
+            <span>TypeScript</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/react/white"
+              alt="React"
+              class="skill-icon"
+            />
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/nodedotjs/white"
+              alt="Node.js"
+              class="skill-icon"
+            />
+            <span>Node.js</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/html5/white"
+              alt="HTML5"
+              class="skill-icon"
+            />
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/css3/white"
+              alt="CSS3"
+              class="skill-icon"
+            />
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/git/white"
+              alt="Git"
+              class="skill-icon"
+            />
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/docker/white"
+              alt="Docker"
+              class="skill-icon"
+            />
+            <span>Docker</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/postgresql/white"
+              alt="PostgreSQL"
+              class="skill-icon"
+            />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/mongodb/white"
+              alt="MongoDB"
+              class="skill-icon"
+            />
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.simpleicons.org/amazonwebservices/white"
+              alt="AWS"
+              class="skill-icon"
+            />
+
+            <span>AWS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 </div>
-</div>
-    <!-- <div id="sketch-container"></div> -->
     <canvas id="glCanvas"></canvas>
 
     <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
     <script src="/theme/js/jellyfish.js"></script>
-    <script>
-      // Initialize the jellyfish animation
-      document.addEventListener("DOMContentLoaded", function () {
-        initJellyfish("glCanvas");
-      });
-    </script>
+    <script src="/theme/js/nav.js"></script>
     <script>
       lucide.createIcons();
     </script>

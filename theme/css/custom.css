@@ -1,8 +1,8 @@
-/* theme/static/css/custom.css */
 :root {
   --main-bg-color: #0b1215;
 }
 
+/* Base styles */
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +15,7 @@ body {
   align-items: center;
 }
 
+/* Canvas styles */
 #glCanvas {
   position: fixed;
   top: 50%;
@@ -25,95 +26,46 @@ body {
 }
 
 #sketch-container {
-  justify-content: center;
-  border: #fff 1px;
-}
-
-#sketch-container,
-#animation-canvas {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
+  justify-content: center;
 }
 
 #sketch-container canvas {
   position: absolute !important;
 }
 
+/* Content layout */
 .content {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   padding: 2rem;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
 
-.social-links {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-  justify-content: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.142);
-  padding-top: 1.5rem;
-}
-
-.social-links a {
-  align-self: flex-end;
-  color: #fff;
-  text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 0.2s;
-}
-
-.social-links a:hover {
-  opacity: 1;
-}
-
+/* Info panel */
 .info-panel {
-  /* background: rgba(0, 0, 0, 0); */
+  background: rgba(0, 0, 0, 0);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  -webkit-backdrop-filter: blur(10px);
   padding: 2rem;
   border-radius: 1rem;
-  /* box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); */
-  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* width: 100%; */
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-  .content {
-    margin: 0;
-    align-items: end;
-  }
-
-  .info-panel {
-    background: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(8px);
-    padding: 2rem;
-    border-radius: 15px;
-    max-width: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  }
-
-  .social-links {
-    gap: 1.2rem;
-  }
-
-  #glCanvas {
-    top: 25%;
-  }
-}
-
+/* Typography */
 h1 {
   margin: 0 0 1rem 0;
   font-size: 2.5rem;
@@ -125,10 +77,171 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+/* Navigation */
+.vertical-nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 1000;
+  /* Position relative to the info-panel */
+  left: calc(
+    50% - 450px - 4rem
+  ); /* Adjust based on half of viewport minus half of max-width of info-panel minus nav width */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-icon {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  z-index: 1001;
+  padding: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-btn:hover,
+.menu-open {
+  color: rgba(255, 255, 255, 1);
+}
+
+.mobile-menu-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Projects styles */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-tags {
+  margin: 1rem 0;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+
+/* About page styles */
+.about-content {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.profile-section {
+  text-align: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  width: 100%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.142);
+  padding-top: 1.5rem;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.social-links a:hover {
+  opacity: 1;
+}
+
 .links {
   margin-top: 2rem;
 }
 
+.link,
 .links a {
   color: #ffffff;
   text-decoration: none;
@@ -138,11 +251,79 @@ h1 {
   transition: border-color 0.2s;
 }
 
+.link,
 .links a:hover {
   border-bottom-color: #ffffff;
 }
 
-.article-info {
-  color: #a0a0a0;
-  margin-bottom: 1.5rem;
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Mobile navigation */
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+
+  .vertical-nav {
+    position: fixed;
+    top: 0;
+    left: -4rem; /* Start outside viewport */
+    height: 100vh;
+    width: 4rem;
+    background: rgba(11, 18, 21, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transform: none;
+    padding: 4rem 0;
+    transition: left 0.3s ease;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .vertical-nav.nav-open {
+    left: 0;
+  }
+
+  .nav-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  /* Mobile layout adjustments */
+  .content {
+    padding: 1rem;
+  }
+
+  .info-panel {
+    margin: 1rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .skill-item {
+    padding: 0.75rem;
+  }
+
+  #glCanvas {
+    top: 25%;
+  }
+
+  .social-links {
+    gap: 1.2rem;
+  }
 }

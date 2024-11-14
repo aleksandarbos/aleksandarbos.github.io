@@ -8,19 +8,38 @@
       rel="stylesheet"
       href="/theme/css/custom.css"
     />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script> -->
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <!-- <canvas id="animation-canvas"></canvas> -->
-    <!-- <script src="/theme/js/animation.js"></script> -->
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="vertical-nav">
+      <a href="/" class="nav-icon" title="Home">
+        <i data-lucide="home"></i>
+      </a>
+      <a href="/about/" class="nav-icon" title="About">
+        <i data-lucide="user"></i>
+      </a>
+      <a href="/projects/" class="nav-icon" title="Projects">
+        <i data-lucide="folder"></i>
+      </a>
+      <a href="/blog/" class="nav-icon" title="Blog">
+        <i data-lucide="rss"></i>
+      </a>
+    </nav>
+
     <div class="content"><div class="info-panel">
   <h1>Aleksandar Bošnjak</h1>
   <div class="title">10y+ Full Stack Dev Experience</div>
 
   <p>
     Exploring the intersection of science, art, and code. Creating digital
-    experiences that blend beauty with functionality. Based in Novi Sad, Serbia.
+    experiences that blend beauty with functionality. Based in Novi Sad, Serbia
+    (GMT+1).
   </p>
 
   <div class="links">
@@ -30,7 +49,7 @@
   </div>
 
   <div class="social-links">
-    <a href="https://linkedin.com/in/aleksandarbosnjak" aria-label="LinkedIn">
+    <a href="https://linkedin.com/in/aleksandar-bosnjak" aria-label="LinkedIn">
       <i data-lucide="linkedin"></i>
     </a>
     <a href="https://github.com/aleksandarbos" aria-label="GitHub">
@@ -48,17 +67,11 @@
   </div>
 </div>
 </div>
-    <!-- <div id="sketch-container"></div> -->
     <canvas id="glCanvas"></canvas>
 
     <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
     <script src="/theme/js/jellyfish.js"></script>
-    <script>
-      // Initialize the jellyfish animation
-      document.addEventListener("DOMContentLoaded", function () {
-        initJellyfish("glCanvas");
-      });
-    </script>
+    <script src="/theme/js/nav.js"></script>
     <script>
       lucide.createIcons();
     </script>
