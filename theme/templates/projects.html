@@ -19,14 +19,14 @@
         {% endif %}
         <div class="project-content">
           <h2>{{ article.title }}</h2>
-          {% if article.summary %}
-          <p>{{ article.summary }}</p>
-          {% endif %}
           <div class="project-tags">
             {% if article.tags %} {% for tag in article.tags %}
             <span class="tag">{{ tag }}</span>
             {% endfor %} {% endif %}
           </div>
+          {% if article.summary %}
+          <p>{{ article.summary }}</p>
+          {% endif %}
           <div class="links">
             <a href="{{ SITEURL }}/{{ article.url }}">View Project</a>
           </div>

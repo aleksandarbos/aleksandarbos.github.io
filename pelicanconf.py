@@ -30,7 +30,7 @@ INDEX_SAVE_AS = 'index.html'
 
 PAGE_TEMPLATES = {
     'about': 'about.html',
-    'projects': 'projects.html'
+    'projects': 'projects.html',
 }
 
 # Disable Default Pages
@@ -63,3 +63,7 @@ SITEMAP = {
 
 # RELATIVE_URLS = False
 GOOGLE_ANALYTICS = 'UA-XXXXX-Y'  # If you want analytics
+
+TEMPLATE_PAGES = {
+    'projects.html': 'projects/index.html',
+}

@@ -1,8 +1,7 @@
 Title: Legal Open Data Generator: Enhancing Public Access to Law
 Date: 2024-03-20
 Category: projects
-Tags: open data, semantic web, rdf, rdf/xml, schema design
-Slug: test04
+Tags: Open Data, Semantic Seb, Rdf, Rdf/XML, Vocabulary Schema Design
 Thumbnail: images/open_data.jpeg
 Summary: RDF open data generator for legal documents is aimed at improving public access and interconnectedness of legal...
 
