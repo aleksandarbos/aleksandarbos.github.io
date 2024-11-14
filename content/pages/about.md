@@ -1,4 +1,5 @@
 Title: About
-Slug: about
+Template: about
+Profile_image: images/profile.jpeg
 
-Your about page content here...
+Your bio text goes here...

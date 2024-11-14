@@ -3,7 +3,8 @@
 <div class="info-panel">
   <h1>Blog Posts</h1>
   <div class="blog-list">
-    {% if articles %} {% for article in articles %}
+    {% if articles %} {% for article in articles %} {% if article.category ==
+    'blogposts' %}
     <article class="blog-entry">
       <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
       <div class="article-info">
@@ -13,7 +14,7 @@
       <p>{{ article.summary }}</p>
       {% endif %}
     </article>
-    {% endfor %} {% else %}
+    {% endif %} {% endfor %} {% else %}
     <p>No blog posts yet.</p>
     {% endif %}
   </div>

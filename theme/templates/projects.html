@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}Projects - {{ SITENAME }}{% endblock
+%} {% block content %}
+<main class="projects-container">
+  <div class="content-wrapper info-panel">
+    <header class="page-header">
+      <h1>Projects</h1>
+      <p>A collection of my work and experiments</p>
+    </header>
+
+    <div class="projects-grid">
+      {% for article in articles %} {% if article.category == 'projects' %}
+      <article class="project-card">
+        {% if article.thumbnail %}
+        <img
+          src="{{ SITEURL }}/{{ article.thumbnail }}"
+          alt="{{ article.title }}"
+          class="project-thumbnail"
+        />
+        {% endif %}
+        <div class="project-content">
+          <h2>{{ article.title }}</h2>
+          {% if article.summary %}
+          <p>{{ article.summary }}</p>
+          {% endif %}
+          <div class="project-tags">
+            {% if article.tags %} {% for tag in article.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %} {% endif %}
+          </div>
+          <div class="links">
+            <a href="{{ SITEURL }}/{{ article.url }}">View Project</a>
+          </div>
+        </div>
+      </article>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+</main>
+{% endblock %}

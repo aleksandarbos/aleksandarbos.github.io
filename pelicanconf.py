@@ -1,6 +1,6 @@
 # pelicanconf.py
-AUTHOR = 'Aleksandar Bosnjak'
-SITENAME = 'Aleksandar Bosnjak'
+AUTHOR = 'Aleksandar Bošnjak'
+SITENAME = 'Aleksandar Bošnjak\'s portfolio'
 SITEURL = ''
 
 PATH = 'content'
@@ -25,8 +25,13 @@ PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
 
 # Direct Templates
-DIRECT_TEMPLATES = ['index', 'articles']
+DIRECT_TEMPLATES = ['index', 'articles', 'projects']
 INDEX_SAVE_AS = 'index.html'
+
+PAGE_TEMPLATES = {
+    'about': 'about.html',
+    'projects': 'projects.html'
+}
 
 # Disable Default Pages
 ARCHIVES_SAVE_AS = ''
