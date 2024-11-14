@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Linkter AI: Semantic internal linking - Aleksandar Bošnjak's portfolio</title>
+    <link
+      rel="stylesheet"
+      href="/theme/css/custom.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/theme/css/about.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/theme/css/projects.css"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="vertical-nav">
+      <a href="/" class="nav-icon" title="Home">
+        <i data-lucide="home"></i>
+      </a>
+      <a href="/about/" class="nav-icon" title="About">
+        <i data-lucide="user"></i>
+      </a>
+      <a href="/projects/" class="nav-icon" title="Projects">
+        <i data-lucide="folder"></i>
+      </a>
+      <a href="/blog/" class="nav-icon" title="Blog">
+        <i data-lucide="rss"></i>
+      </a>
+    </nav>
+
+    <div class="content"><div class="info-panel">
+  <h1>Linkter AI: Semantic internal linking</h1>
+  <div class="article-info">
+    <span class="date">November 14, 2024</span>
+  </div>
+  <h2>Overview</h2>
+<p>Linkter is an advanced SaaS tool for building internal links within WordPress websites, leveraging cutting-edge AI and NLP technologies. Some of the challenges I've faced:</p>
+<ul>
+<li>
+<p>To ensure scalability, I implemented lambda parallelization within AWS Step Functions, enabling concurrent content analysis across multiple websites.</p>
+</li>
+<li>
+<p>For accurate link recommendations, I combined scikit-learn(sklearn) NLP models with custom preprocessing and domain-specific rules, significantly enhancing keywording accuracy.</p>
+</li>
+<li>
+<p>Integration with WordPress required developing a custom plugin supporting complex scenarios like Elementor updates, authenticated via WP app passwords.</p>
+</li>
+<li>
+<p>Security was paramount; I implemented Fernet encryption for sensitive data like OpenAI API keys and GSC tokens before server storage.</p>
+</li>
+<li>
+<p>Deployment of sophisticated ML models necessitated custom bash scripts for EC2 instances, overcoming Lambda layer limitations.</p>
+</li>
+<li>
+<p>Analyzing website data in close to real-time requires lots of engineering compromises.</p>
+</li>
+</ul>
+</div>
+</div>
+    <canvas id="glCanvas"></canvas>
+
+    <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
+    <script src="/theme/js/jellyfish.js"></script>
+    <script src="/theme/js/nav.js"></script>
+    <script src="/theme/js/tech-stack.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

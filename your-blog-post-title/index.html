@@ -1,1 +1,54 @@
-<!doctype html><html lang=en><meta charset=utf-8><meta content=width=device-width,initial-scale=1 name=viewport><title>Your Blog Post Title - Aleksandar Bosnjak</title><link href=/theme/css/custom.css rel=stylesheet><script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js></script><script src=https://unpkg.com/lucide@latest></script><body><div id=sketch-container></div><div class=content><div class=info-panel><h1>Your Blog Post Title</h1><p>Your blog post content here...</div></div><script>var draw=(()=>{let b=99,c=300;background(`#0B1215`);stroke(255,96);for(let d=b;d<c;d+=5){for(let e=b;e<c;e++){let b=a(e,d);point(b[0],b[1])}};t+=PI/60});var windowResized=(()=>{resizeCanvas(windowWidth,windowHeight)});var a=((a,b)=>{let h=8,k=200,j=2,i=25;let c=a/h- i;let d=b/h- i;let e=mag(c,d)**j/99;let f=a/3+ ((c*0.5)/cos(b*5))*sin(e*e- t);let g=e/j- t/h;return [f*sin(g)+ d*sin(e+ c- t)+ k,(f+ b/h+ e*9)*cos(g)+ k]});var setup=(()=>{let a=createCanvas(windowWidth,windowHeight);a.parent(`sketch-container`)});let t=0</script><script>lucide.createIcons()</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Blog Post Title - Aleksandar Bošnjak's portfolio</title>
+    <link
+      rel="stylesheet"
+      href="/theme/css/custom.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/theme/css/about.css"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="vertical-nav">
+      <a href="/" class="nav-icon" title="Home">
+        <i data-lucide="home"></i>
+      </a>
+      <a href="/about/" class="nav-icon" title="About">
+        <i data-lucide="user"></i>
+      </a>
+      <a href="/projects/" class="nav-icon" title="Projects">
+        <i data-lucide="folder"></i>
+      </a>
+      <a href="/blog/" class="nav-icon" title="Blog">
+        <i data-lucide="rss"></i>
+      </a>
+    </nav>
+
+    <div class="content"><div class="info-panel">
+  <h1>Your Blog Post Title</h1>
+  <p>First post!!!!</p>
+</div>
+</div>
+    <canvas id="glCanvas"></canvas>
+
+    <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
+    <script src="/theme/js/jellyfish.js"></script>
+    <script src="/theme/js/nav.js"></script>
+    <script src="/theme/js/tech-stack.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

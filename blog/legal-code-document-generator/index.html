@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Legal Code Document Generator - Aleksandar Bošnjak's portfolio</title>
+    <link
+      rel="stylesheet"
+      href="/theme/css/custom.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/theme/css/about.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/theme/css/projects.css"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="vertical-nav">
+      <a href="/" class="nav-icon" title="Home">
+        <i data-lucide="home"></i>
+      </a>
+      <a href="/about/" class="nav-icon" title="About">
+        <i data-lucide="user"></i>
+      </a>
+      <a href="/projects/" class="nav-icon" title="Projects">
+        <i data-lucide="folder"></i>
+      </a>
+      <a href="/blog/" class="nav-icon" title="Blog">
+        <i data-lucide="rss"></i>
+      </a>
+    </nav>
+
+    <div class="content"><div class="info-panel">
+  <h1>Legal Code Document Generator</h1>
+  <div class="article-info">
+    <span class="date">March 20, 2024</span>
+  </div>
+  <h2>Smart Document Generator</h2>
+<p>Open Law Library is a DC-based startup (NGO) aiming to make the law widely accessible to all for free in a high-quality format.</p>
+<p>As this was indeed a complex library, here are some of the key aspects I've faced:</p>
+<ul>
+<li>
+<p>Implemented highly optimized recursive algorithms and handlers in Python for XML processing</p>
+</li>
+<li>
+<p>Optimized and profiled Python handlers for high-volume data transformation, enabling generation of thousand-page documents</p>
+</li>
+<li>
+<p>Employed Test-Driven Development (TDD) to ensure high quality and transformation accuracy</p>
+</li>
+<li>
+<p>Created a Bidirectional XML Transformer with Round-Trip Integrity (<code>XML ↔ DOCX</code>), synchronizing parser and transformer components, putting high emphasis on data integrity checks</p>
+</li>
+<li>
+<p>Extended python-docx library with custom features adhering to OOXML standard, including support for content controls with public contributions: <a href="https://github.com/openlawlibrary/python-docx">https://github.com/openlawlibrary/python-docx</a></p>
+</li>
+</ul>
+<p>As all input data is in the public domain, you can see example: <a href="https://github.com/DCCouncil/law-xml">https://github.com/DCCouncil/law-xml</a></p>
+</div>
+</div>
+    <canvas id="glCanvas"></canvas>
+
+    <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
+    <script src="/theme/js/jellyfish.js"></script>
+    <script src="/theme/js/nav.js"></script>
+    <script src="/theme/js/tech-stack.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="/theme/css/custom.css"
     />
+    <link
+      rel="stylesheet"
+      href="/theme/css/about.css"
+    />
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
@@ -45,7 +49,18 @@
           alt="Profile Picture"
           class="profile-image"
         />
-        <div class="bio-section"><p>Your bio text goes here...</p></div>
+        <div class="bio-section">
+          Hi, I'm Aleks — a builder at heart! Since high school, I've been
+          passionate about turning ideas into reality, beginning as a Flash game
+          developer and discovering the joy of combining creativity, beauty, and
+          logic. With a master's in computer science and over 8+ years in the
+          startup industry, I bring both technical expertise and a capability
+          for creative problem-solving. I believe a strong vision and the right
+          environment can make anything possible.
+          <br />
+          <br />
+          Let's build something amazing together! 🚀
+        </div>
         <div class="social-links">
           <a
             href="https://linkedin.com/in/aleksandar-bosnjak"
@@ -66,107 +81,343 @@
             <i data-lucide="mail"></i>
           </a>
         </div>
+        <div class="download-cv">
+          <a href="/pdf/aleksandarbos_cv.pdf" class="download-button" download>
+            <i data-lucide="download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
       </div>
 
       <div class="skills-section">
         <h2>Technologies & Tools</h2>
-        <div class="skills-grid">
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/python/white"
-              alt="Python"
-              class="skill-icon"
-            />
-            <span>Python</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/javascript/white"
-              alt="JavaScript"
-              class="skill-icon"
-            />
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/typescript/white"
-              alt="TypeScript"
-              class="skill-icon"
-            />
-            <span>TypeScript</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/react/white"
-              alt="React"
-              class="skill-icon"
-            />
-            <span>React</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/nodedotjs/white"
-              alt="Node.js"
-              class="skill-icon"
-            />
-            <span>Node.js</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/html5/white"
-              alt="HTML5"
-              class="skill-icon"
-            />
-            <span>HTML5</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/css3/white"
-              alt="CSS3"
-              class="skill-icon"
-            />
-            <span>CSS3</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/git/white"
-              alt="Git"
-              class="skill-icon"
-            />
-            <span>Git</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/docker/white"
-              alt="Docker"
-              class="skill-icon"
-            />
-            <span>Docker</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/postgresql/white"
-              alt="PostgreSQL"
-              class="skill-icon"
-            />
-            <span>PostgreSQL</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/mongodb/white"
-              alt="MongoDB"
-              class="skill-icon"
-            />
-            <span>MongoDB</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.simpleicons.org/amazonwebservices/white"
-              alt="AWS"
-              class="skill-icon"
-            />
 
-            <span>AWS</span>
+        <div class="tech-categories">
+          <!-- Backend Category -->
+          <div class="tech-category">
+            <div class="category-header">
+              <h3>Backend Engineering</h3>
+              <span class="expand-btn">
+                <i data-lucide="chevron-down"></i>
+              </span>
+            </div>
+
+            <div class="category-content">
+              <!-- Python -->
+              <div class="tech-item">
+                <div class="tech-header">
+                  <img
+                    src="https://cdn.simpleicons.org/python/white"
+                    alt="Python"
+                    class="tech-icon"
+                  />
+                  <div class="tech-title">
+                    <h4>Python</h4>
+                    <span class="experience">8+ years</span>
+                  </div>
+                </div>
+                <p class="tech-description">
+                  Extensive experience building scalable web applications, APIs,
+                  and data processing systems. Specialized in both REST and
+                  GraphQL architectures.
+                </p>
+                <div class="tech-libraries">
+                  <span class="library-tag">Django</span>
+                  <span class="library-tag">Django REST</span>
+                  <span class="library-tag">Flask</span>
+                  <span class="library-tag">GraphQL/Graphene</span>
+                  <span class="library-tag">SQLAlchemy</span>
+                  <span class="library-tag">Scrapy</span>
+                  <span class="library-tag">PyTorch</span>
+                  <span class="library-tag">scikit-learn</span>
+                  <span class="library-tag">lxml</span>
+                  <span class="library-tag">Jinja2</span>
+                </div>
+              </div>
+
+              <!-- .NET -->
+              <div class="tech-item">
+                <div class="tech-header">
+                  <img
+                    src="https://cdn.simpleicons.org/dotnet/white"
+                    alt=".NET"
+                    class="tech-icon"
+                  />
+                  <div class="tech-title">
+                    <h4>.NET Framework</h4>
+                    <span class="experience">3+ years</span>
+                  </div>
+                </div>
+                <p class="tech-description">
+                  Building enterprise-grade applications with Microsoft
+                  technology stack, focusing on scalable web services and APIs.
+                </p>
+                <div class="tech-libraries">
+                  <span class="library-tag">.NET Core</span>
+                  <span class="library-tag">ASP.NET MVC</span>
+                  <span class="library-tag">Web API</span>
+                  <span class="library-tag">Entity Framework</span>
+                  <span class="library-tag">IIS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Category -->
+          <div class="tech-category">
+            <div class="category-header">
+              <h3>Frontend Development</h3>
+              <span class="expand-btn">
+                <i data-lucide="chevron-down"></i>
+              </span>
+            </div>
+
+            <div class="category-content">
+              <!-- JavaScript/TypeScript -->
+              <div class="tech-item">
+                <div class="tech-header">
+                  <div>
+                    <img
+                      src="https://cdn.simpleicons.org/javascript/white"
+                      alt="JavaScript"
+                      class="tech-icon"
+                    />
+                    <img
+                      src="https://cdn.simpleicons.org/typescript/white"
+                      alt="TypeScript"
+                      class="tech-icon"
+                    />
+                  </div>
+                  <div class="tech-title">
+                    <h4>JavaScript / TypeScript</h4>
+                    <span class="experience">8+ years</span>
+                  </div>
+                </div>
+                <p class="tech-description">
+                  Creating responsive, modern web applications with focus on
+                  performance and user experience.
+                </p>
+                <div class="tech-libraries">
+                  <span class="library-tag">React</span>
+                  <span class="library-tag">Angular</span>
+                  <span class="library-tag">TypeScript</span>
+                  <span class="library-tag">Tailwind CSS</span>
+                  <span class="library-tag">SCSS</span>
+                  <span class="library-tag">HTML5</span>
+                  <span class="library-tag">Lodash</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="tech-category">
+            <div class="category-header">
+              <h3>Cloud Architecture & DevOps</h3>
+              <span class="expand-btn">
+                <i data-lucide="chevron-down"></i>
+              </span>
+            </div>
+
+            <div class="category-content">
+              <div class="tech-item">
+                <div class="tech-header">
+                  <img
+                    src="https://cdn.simpleicons.org/amazonwebservices/white"
+                    alt="AWS"
+                    class="tech-icon"
+                  />
+                  <div class="tech-title">
+                    <h4>AWS Cloud Infrastructure</h4>
+                    <span class="experience">3+ years</span>
+                  </div>
+                </div>
+                <p class="tech-description">
+                  Designing and implementing secure, scalable cloud
+                  architectures with focus on microservices and serverless
+                  solutions.
+                </p>
+                <div class="tech-libraries">
+                  <span class="library-tag">Lambda</span>
+                  <span class="library-tag">API Gateway</span>
+                  <span class="library-tag">VPC</span>
+                  <span class="library-tag">EC2</span>
+                  <span class="library-tag">S3</span>
+                  <span class="library-tag">DynamoDB</span>
+                  <span class="library-tag">CloudFront</span>
+                  <span class="library-tag">Cognito</span>
+                  <span class="library-tag">IAM</span>
+                  <span class="library-tag">Step Functions</span>
+                </div>
+              </div>
+
+              <div class="tech-item">
+                <div class="tech-header">
+                  <img
+                    src="https://cdn.simpleicons.org/docker/white"
+                    alt="DevOps"
+                    class="tech-icon"
+                  />
+                  <div class="tech-title">
+                    <h4>DevOps & Infrastructure</h4>
+                    <span class="experience">2+ years</span>
+                  </div>
+                </div>
+                <p class="tech-description">
+                  Implementing CI/CD pipelines and infrastructure as code for
+                  automated, reliable deployments.
+                </p>
+                <div class="tech-libraries">
+                  <span class="library-tag">Docker</span>
+                  <span class="library-tag">Docker Compose</span>
+                  <span class="library-tag">Terraform</span>
+                  <span class="library-tag">Bash</span>
+                  <span class="library-tag">Git</span>
+                  <span class="library-tag">Git Workflows</span>
+                  <span class="library-tag">SSH</span>
+                  <span class="library-tag">Linux</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Development -->
+          <div class="tech-category">
+            <div class="category-header">
+              <h3>Mobile Development</h3>
+              <span class="expand-btn">
+                <i data-lucide="chevron-down"></i>
+              </span>
+            </div>
+
+            <div class="category-content">
+              <div class="tech-item">
+                <div class="tech-header">
+                  <div>
+                    <img
+                      src="https://cdn.simpleicons.org/react/white"
+                      alt="React Native"
+                      class="tech-icon"
+                    />
+                    <img
+                      src="https://cdn.simpleicons.org/expo/white"
+                      alt="Expo React Native"
+                      class="tech-icon"
+                    />
+                  </div>
+                  <div class="tech-title">
+                    <h4>React Native</h4>
+                    <span class="experience">3+ years</span>
+                  </div>
+                </div>
+                <p class="tech-description">
+                  Building cross-platform mobile applications with native
+                  performance and excellent user experience.
+                </p>
+                <div class="tech-libraries">
+                  <span class="library-tag">Expo</span>
+                  <span class="library-tag">Redux</span>
+                  <span class="library-tag">Redux Saga</span>
+                  <span class="library-tag">React Navigation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database & Storage -->
+          <div class="tech-category">
+            <div class="category-header">
+              <h3>Database Architecture & Data Modeling</h3>
+              <span class="expand-btn">
+                <i data-lucide="chevron-down"></i>
+              </span>
+            </div>
+
+            <div class="category-content">
+              <div class="tech-item">
+                <div class="tech-header">
+                  <img
+                    src="https://cdn.simpleicons.org/postgresql/white"
+                    alt="Databases"
+                    class="tech-icon"
+                  />
+                  <div class="tech-title">
+                    <h4>Database Systems</h4>
+                    <span class="experience">4+ years</span>
+                  </div>
+                </div>
+                <p class="tech-description">
+                  Expertise in database architecture design, optimization, and
+                  data modeling across SQL and NoSQL systems.
+                </p>
+                <div class="tech-libraries">
+                  <span class="library-tag">PostgreSQL</span>
+                  <span class="library-tag">MS SQL</span>
+                  <span class="library-tag">MySQL</span>
+                  <span class="library-tag">MongoDB</span>
+                  <span class="library-tag">DynamoDB</span>
+                  <span class="library-tag">SQLite</span>
+                </div>
+              </div>
+
+              <div class="tech-item">
+                <div class="tech-header">
+                  <img
+                    src="https://cdn.simpleicons.org/xml/white"
+                    alt="Data Formats"
+                    class="tech-icon"
+                  />
+                  <div class="tech-title">
+                    <h4>Data Standards & Schema Design</h4>
+                  </div>
+                </div>
+                <p class="tech-description">
+                  Specialized in designing and implementing data exchange
+                  formats and vocabulary schemas.
+                </p>
+                <div class="tech-libraries">
+                  <span class="library-tag">XML/XSD</span>
+                  <span class="library-tag">RDF/XML</span>
+                  <span class="library-tag">Open Data</span>
+                  <span class="library-tag">Schema Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- UI/UX Design -->
+          <div class="tech-category">
+            <div class="category-header">
+              <h3>UI/UX Design</h3>
+              <span class="expand-btn">
+                <i data-lucide="chevron-down"></i>
+              </span>
+            </div>
+
+            <div class="category-content">
+              <div class="tech-item">
+                <div class="tech-header">
+                  <img
+                    src="https://cdn.simpleicons.org/figma/white"
+                    alt="Design Tools"
+                    class="tech-icon"
+                  />
+                  <div class="tech-title">
+                    <h4>Design & Prototyping</h4>
+                  </div>
+                </div>
+                <p class="tech-description">
+                  Creating intuitive user interfaces and engaging user
+                  experiences with modern design tools.
+                </p>
+                <div class="tech-libraries">
+                  <span class="library-tag">Figma</span>
+                  <span class="library-tag">Adobe Illustrator</span>
+                  <span class="library-tag">Photoshop</span>
+                  <span class="library-tag">After Effects</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -179,6 +430,7 @@
     <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
     <script src="/theme/js/jellyfish.js"></script>
     <script src="/theme/js/nav.js"></script>
+    <script src="/theme/js/tech-stack.js"></script>
     <script>
       lucide.createIcons();
     </script>

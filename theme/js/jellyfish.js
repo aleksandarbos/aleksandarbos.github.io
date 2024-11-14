@@ -9,8 +9,8 @@
     startY: 99,
     endY: 300,
     backgroundColor: [0, 0, 0, 0.0],
-    scale: 0.4, // Smaller scale for mobile
-    motionScale: 3, // Slightly reduced motion for mobile
+    scale: 0.4,
+    motionScale: 3,
   });
 
   const getDesktopParams = () => ({

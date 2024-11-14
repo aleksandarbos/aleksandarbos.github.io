@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inner Lighthouse: IOS and Android Self-Reflection App - Aleksandar Bošnjak's portfolio</title>
+    <link
+      rel="stylesheet"
+      href="/theme/css/custom.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/theme/css/about.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/theme/css/projects.css"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="vertical-nav">
+      <a href="/" class="nav-icon" title="Home">
+        <i data-lucide="home"></i>
+      </a>
+      <a href="/about/" class="nav-icon" title="About">
+        <i data-lucide="user"></i>
+      </a>
+      <a href="/projects/" class="nav-icon" title="Projects">
+        <i data-lucide="folder"></i>
+      </a>
+      <a href="/blog/" class="nav-icon" title="Blog">
+        <i data-lucide="rss"></i>
+      </a>
+    </nav>
+
+    <div class="content"><div class="info-panel">
+  <h1>Inner Lighthouse: IOS and Android Self-Reflection App</h1>
+  <div class="article-info">
+    <span class="date">November 10, 2024</span>
+  </div>
+  <h2>Project details</h2>
+<p>Inner Lighthouse is cross-platform mobile app for daily self-reflection exercises. The app development with itself has brought many technical challenges such as:</p>
+<ul>
+<li>
+<p>Implemented a custom, responsive Duolingo-style journey layout using a tailored sin/cos function, ensuring cross-platform consistency across various mobile screen sizes.</p>
+</li>
+<li>
+<p>Engineered a complex payment system with platform-specific code for Android and iOS, handling diverse local currencies and data extraction intricacies.</p>
+</li>
+<li>
+<p>Designed and implemented a robust architecture prioritizing user privacy, safeguarding identity even in the event of a security breach.</p>
+</li>
+<li>
+<p>Utilized React, Redux+Sagas for state management, with AWS (Lambdas, S3) for backend services. Implemented GraphQL API using Graphene, streamlining data fetching for the React app.</p>
+</li>
+<li>
+<p>Established a microservices architecture with Terraform for deployment, showcasing DevOps proficiency.</p>
+</li>
+</ul>
+</div>
+</div>
+    <canvas id="glCanvas"></canvas>
+
+    <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
+    <script src="/theme/js/jellyfish.js"></script>
+    <script src="/theme/js/nav.js"></script>
+    <script src="/theme/js/tech-stack.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
