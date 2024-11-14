@@ -45,10 +45,13 @@ MENUITEMS = [
     ('About', '/about'),
 ]
 
+READERS = {'html': None}
+
 # Extra Path Metadata
 STATIC_PATHS = ['images', 'extra', 'pdf']
 EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'theme/css/custom.css'},
+    'extra/google968241b928612b55.html': {'path': 'google968241b928612b55.html'},
 }
 
 
