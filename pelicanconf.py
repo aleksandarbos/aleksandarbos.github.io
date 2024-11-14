@@ -65,7 +65,7 @@ SITEMAP = {
 }
 
 # RELATIVE_URLS = False
-GOOGLE_ANALYTICS = 'UA-XXXXX-Y'  # If you want analytics
+GOOGLE_ANALYTICS = 'G-4GYKRC0Y77'  # If you want analytics
 
 TEMPLATE_PAGES = {
     'projects.html': 'projects/index.html',
