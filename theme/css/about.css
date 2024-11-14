@@ -103,6 +103,10 @@
   font-size: 0.8rem;
 }
 
+.page-header {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .tech-header {
     flex-direction: column;
