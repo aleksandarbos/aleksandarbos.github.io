@@ -1,22 +1,19 @@
 {% extends "base.html" %} {% block title %}Blog - {{ SITENAME }}{% endblock %}
 {% block content %}
-<div class="info-panel">
-  <h1>Blog Posts</h1>
-  <div class="blog-list">
-    {% if articles %} {% for article in articles %} {% if article.category ==
-    'blogposts' %}
-    <article class="blog-entry">
-      <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-      <div class="article-info">
-        <span class="date">{{ article.date|strftime('%B %d, %Y') }}</span>
-      </div>
-      {% if article.summary %}
-      <p>{{ article.summary }}</p>
-      {% endif %}
-    </article>
-    {% endif %} {% endfor %} {% else %}
-    <p>No blog posts yet.</p>
-    {% endif %}
+<div class="info-panel construction-panel">
+  <div class="construction-content">
+    <i data-lucide="construction" class="construction-icon"></i>
+    <h1>Blog Coming Soon</h1>
+    <p>
+      This section is currently under construction. Check back soon for insights
+      about technology, development, and more.
+    </p>
+    <div class="links">
+      <a href="/" class="back-link">
+        <i data-lucide="arrow-left"></i>
+        Back to Home
+      </a>
+    </div>
   </div>
 </div>
 {% endblock %}

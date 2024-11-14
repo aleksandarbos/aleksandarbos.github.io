@@ -46,7 +46,7 @@ MENUITEMS = [
 ]
 
 # Extra Path Metadata
-STATIC_PATHS = ['images', 'extra']
+STATIC_PATHS = ['images', 'extra', 'pdf']
 EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'theme/css/custom.css'},
 }
