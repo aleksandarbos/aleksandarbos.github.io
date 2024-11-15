@@ -1,10 +1,30 @@
-{% extends "base.html" %} {% block title %}{{ article.title }} - {{ SITENAME
-}}{% endblock %} {% block content %}
-<div class="info-panel">
-  <h1>{{ article.title }}</h1>
-  <div class="article-info">
-    <span class="date">{{ article.date|strftime('%B %d, %Y') }}</span>
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<article class="article">
+  <!-- Article Header -->
+  <div class="info-panel">
+
+    <header class="article-header">
+      <h1 class="article-title">{{ article.title }}</h1>
+
+      <div class="article-meta">
+        {% if article.tags %}
+        <div class="project-tags">
+          {% for tag in article.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <div class="article-content">
+      {{ article.content }}
+    </div>
   </div>
-  {{ article.content }}
-</div>
+</article>
 {% endblock %}
