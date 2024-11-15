@@ -1,92 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inner Lighthouse: IOS and Android Self-Reflection App - Aleksandar Bošnjak's portfolio</title>
-    <link
-      rel="stylesheet"
-      href="/theme/css/custom.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/theme/css/about.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/theme/css/projects.css"
-    />
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4GYKRC0Y77"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-4GYKRC0Y77");
-    </script>
-  </head>
-  <body>
-    <!-- Mobile menu button -->
-    <button class="mobile-menu-btn">
-      <i data-lucide="menu"></i>
-    </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inner Lighthouse: IOS and Android Self-Reflection App - Aleksandar Bošnjak's portfolio</title>
+  <link rel="stylesheet" href="/theme/css/custom.css" />
+  <link rel="stylesheet" href="/theme/css/about.css" />
+  <link rel="stylesheet" href="/theme/css/projects.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GYKRC0Y77"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- Navigation -->
-    <nav class="vertical-nav">
-      <a href="/" class="nav-icon" title="Home">
-        <i data-lucide="home"></i>
-      </a>
-      <a href="/about/" class="nav-icon" title="About">
-        <i data-lucide="user"></i>
-      </a>
-      <a href="/projects/" class="nav-icon" title="Projects">
-        <i data-lucide="folder"></i>
-      </a>
-      <a href="/blog/" class="nav-icon" title="Blog">
-        <i data-lucide="rss"></i>
-      </a>
-    </nav>
+    gtag("config", "G-4GYKRC0Y77");
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 
-    <div class="content"><div class="info-panel">
-  <h1>Inner Lighthouse: IOS and Android Self-Reflection App</h1>
-  <div class="article-info">
-    <span class="date">November 10, 2024</span>
-  </div>
-  <h2>Project details</h2>
-<p>Inner Lighthouse is cross-platform mobile app for daily self-reflection exercises. The app development with itself has brought many technical challenges such as:</p>
+</head>
+
+<body>
+  <!-- Mobile menu button -->
+  <button class="mobile-menu-btn">
+    <i data-lucide="menu"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="vertical-nav">
+    <a href="/" class="nav-icon" title="Home">
+      <i data-lucide="home"></i>
+    </a>
+    <a href="/about/" class="nav-icon" title="About">
+      <i data-lucide="user"></i>
+    </a>
+    <a href="/projects/" class="nav-icon" title="Projects">
+      <i data-lucide="folder"></i>
+    </a>
+    <a href="/blog/" class="nav-icon" title="Blog">
+      <i data-lucide="rss"></i>
+    </a>
+  </nav>
+
+  <div class="content"><article class="article">
+  <!-- Article Header -->
+  <div class="info-panel">
+
+    <header class="article-header">
+      <h1 class="article-title">Inner Lighthouse: IOS and Android Self-Reflection App</h1>
+
+      <div class="article-meta">
+        <div class="project-tags">
+          <span class="tag">Mobile Development</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Expo</span>
+          <span class="tag">GraphQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">Graphene</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">AWS Lambda</span>
+          <span class="tag">AWS DynamoDB</span>
+          <span class="tag">GPT / OpenAI</span>
+          <span class="tag">Microservices</span>
+          <span class="tag">Redux</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">Figma</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <div class="article-content">
+      <p><img alt="Inner Lighthouse App Interface" src="/images/inner_lighthouse.png"></p>
+<h2>Overview</h2>
+<p>Inner Lighthouse is a gamified personal development app that guides users through structured self-discovery and growth journeys. Taking inspiration from language learning apps like Duolingo, it transforms psychological concepts and exercises into engaging daily practices.</p>
+<h2>Development Highlights</h2>
+<h3>Interactive Journey System</h3>
 <ul>
-<li>
-<p>Implemented a custom, responsive Duolingo-style journey layout using a tailored sin/cos function, ensuring cross-platform consistency across various mobile screen sizes.</p>
-</li>
-<li>
-<p>Engineered a complex payment system with platform-specific code for Android and iOS, handling diverse local currencies and data extraction intricacies.</p>
-</li>
-<li>
-<p>Designed and implemented a robust architecture prioritizing user privacy, safeguarding identity even in the event of a security breach.</p>
-</li>
-<li>
-<p>Utilized React, Redux+Sagas for state management, with AWS (Lambdas, S3) for backend services. Implemented GraphQL API using Graphene, streamlining data fetching for the React app.</p>
-</li>
-<li>
-<p>Established a microservices architecture with Terraform for deployment, showcasing DevOps proficiency.</p>
-</li>
+<li>Engineered a custom path-generation algorithm using trigonometric functions to create dynamic, visually appealing progress paths</li>
+<li>Implemented progressive unlock system with real-time progress tracking and achievement notifications</li>
+<li>Built responsive layouts adapting seamlessly across different device dimensions and orientations</li>
 </ul>
+<h3>Architecture &amp; Infrastructure</h3>
+<ul>
+<li>Designed scalable microservices architecture leveraging AWS Lambda, DynamoDB, and S3</li>
+<li>Implemented GraphQL API using Graphene for efficient data fetching and reduced network overhead</li>
+<li>Built secure user authentication system with biometric support and encrypted data storage</li>
+<li>Deployed infrastructure using Terraform with modular configuration for different environments</li>
+</ul>
+<p><img alt="Inner Lighthouse App Interface" src="/images/inner-lighthouse/wallpapper-02.png"></p>
+<h3>Platform Integration</h3>
+<ul>
+<li>Developed cross-platform codebase using React Native and TypeScript</li>
+<li>Integrated platform-specific in-app purchase systems for iOS (StoreKit) and Android (Billing Library)</li>
+<li>Implemented native module bridges for platform-specific features and optimizations</li>
+<li>Built offline support with data synchronization and conflict resolution</li>
+</ul>
+<h3>State Management &amp; Performance</h3>
+<ul>
+<li>Utilized Redux with Redux-Saga for predictable state management and complex async flows</li>
+<li>Implemented optimistic updates for improved perceived performance</li>
+<li>Built efficient caching system reducing API calls and enabling offline functionality</li>
+<li>Optimized render performance through strategic component memoization</li>
+</ul>
+<p><img alt="Inner Lighthouse App Interface" src="/images/inner-lighthouse/wallpapper-03.png"></p>
+<h3>Key Features</h3>
+<ul>
+<li>Progressive journey system with branching paths</li>
+<li>Interactive exercises and reflections</li>
+<li>Achievement and progress tracking</li>
+<li>Offline support with sync</li>
+<li>Cross-platform data persistence</li>
+<li>End-to-end encryption for user data</li>
+</ul>
+<h2>Technical Stack</h2>
+<ul>
+<li><strong>Frontend:</strong> React Native, TypeScript, Redux, Redux-Saga</li>
+<li><strong>Backend:</strong> Node.js, GraphQL, Graphene</li>
+<li><strong>Infrastructure:</strong> AWS Lambda, DynamoDB, S3, CloudFront</li>
+<li><strong>DevOps:</strong> Terraform, GitHub Actions, Docker</li>
+</ul>
+<h2>Future Development</h2>
+<p>Currently working on expanding the platform with:</p>
+<ul>
+<li>AI-powered personalization</li>
+<li>Group journey capabilities</li>
+<li>Enhanced analytics dashboard</li>
+<li>Community features with privacy focus</li>
+<li>Expanded exercise library</li>
+</ul>
+<p><img alt="Inner Lighthouse App Interface" src="/images/inner-lighthouse/wallpapper-04.jpeg"></p>
+<h2>Outcome</h2>
+<p>The app successfully launched on both iOS and Android platforms, maintaining a 4.8+ rating on both stores. User engagement metrics show an average session time of 12 minutes with a 40% daily return rate.</p>
+<h3>Download</h3>
+<p><a href="https://apps.apple.com/us/app/inner-lighthouse/id6473821361">iOS App Store</a>  <a href="https://play.google.com/store/apps/details?id=com.twentyeight.innerlighthouse">Google Play Store</a></p>
+    </div>
+  </div>
+</article>
 </div>
-</div>
-    <canvas id="glCanvas"></canvas>
+  <canvas id="glCanvas"></canvas>
 
-    <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
-    <script src="/theme/js/jellyfish.js"></script>
-    <script src="/theme/js/nav.js"></script>
-    <script src="/theme/js/tech-stack.js"></script>
-    <script>
-      lucide.createIcons();
-    </script>
-  </body>
+  <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
+  <script src="/theme/js/jellyfish.js"></script>
+  <script src="/theme/js/nav.js"></script>
+  <script src="/theme/js/tech-stack.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind(".article-content img", {
+      // options
+    });
+  </script>
+</body>
+
 </html>

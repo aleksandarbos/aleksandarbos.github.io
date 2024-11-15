@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Aleksandar Bošnjak's portfolio - React Native tag</title>
-    <link
-      rel="stylesheet"
-      href="/theme/css/custom.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/theme/css/about.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/theme/css/projects.css"
-    />
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4GYKRC0Y77"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-4GYKRC0Y77");
-    </script>
-  </head>
-  <body>
-    <!-- Mobile menu button -->
-    <button class="mobile-menu-btn">
-      <i data-lucide="menu"></i>
-    </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aleksandar Bošnjak's portfolio - React Native tag</title>
+  <link rel="stylesheet" href="/theme/css/custom.css" />
+  <link rel="stylesheet" href="/theme/css/about.css" />
+  <link rel="stylesheet" href="/theme/css/projects.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GYKRC0Y77"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- Navigation -->
-    <nav class="vertical-nav">
-      <a href="/" class="nav-icon" title="Home">
-        <i data-lucide="home"></i>
-      </a>
-      <a href="/about/" class="nav-icon" title="About">
-        <i data-lucide="user"></i>
-      </a>
-      <a href="/projects/" class="nav-icon" title="Projects">
-        <i data-lucide="folder"></i>
-      </a>
-      <a href="/blog/" class="nav-icon" title="Blog">
-        <i data-lucide="rss"></i>
-      </a>
-    </nav>
+    gtag("config", "G-4GYKRC0Y77");
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 
-    <div class="content"><div class="info-panel">
+</head>
+
+<body>
+  <!-- Mobile menu button -->
+  <button class="mobile-menu-btn">
+    <i data-lucide="menu"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="vertical-nav">
+    <a href="/" class="nav-icon" title="Home">
+      <i data-lucide="home"></i>
+    </a>
+    <a href="/about/" class="nav-icon" title="About">
+      <i data-lucide="user"></i>
+    </a>
+    <a href="/projects/" class="nav-icon" title="Projects">
+      <i data-lucide="folder"></i>
+    </a>
+    <a href="/blog/" class="nav-icon" title="Blog">
+      <i data-lucide="rss"></i>
+    </a>
+  </nav>
+
+  <div class="content"><div class="info-panel">
   <h1>Aleksandar Bošnjak</h1>
   <div class="title">10y+ Full Stack Dev Experience</div>
 
@@ -87,14 +79,21 @@
   </div>
 </div>
 </div>
-    <canvas id="glCanvas"></canvas>
+  <canvas id="glCanvas"></canvas>
 
-    <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
-    <script src="/theme/js/jellyfish.js"></script>
-    <script src="/theme/js/nav.js"></script>
-    <script src="/theme/js/tech-stack.js"></script>
-    <script>
-      lucide.createIcons();
-    </script>
-  </body>
+  <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
+  <script src="/theme/js/jellyfish.js"></script>
+  <script src="/theme/js/nav.js"></script>
+  <script src="/theme/js/tech-stack.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind(".article-content img", {
+      // options
+    });
+  </script>
+</body>
+
 </html>

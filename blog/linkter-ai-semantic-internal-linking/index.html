@@ -1,95 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Linkter AI: Semantic internal linking - Aleksandar Bošnjak's portfolio</title>
-    <link
-      rel="stylesheet"
-      href="/theme/css/custom.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/theme/css/about.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/theme/css/projects.css"
-    />
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4GYKRC0Y77"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-4GYKRC0Y77");
-    </script>
-  </head>
-  <body>
-    <!-- Mobile menu button -->
-    <button class="mobile-menu-btn">
-      <i data-lucide="menu"></i>
-    </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Linkter AI: Semantic internal linking - Aleksandar Bošnjak's portfolio</title>
+  <link rel="stylesheet" href="/theme/css/custom.css" />
+  <link rel="stylesheet" href="/theme/css/about.css" />
+  <link rel="stylesheet" href="/theme/css/projects.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GYKRC0Y77"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- Navigation -->
-    <nav class="vertical-nav">
-      <a href="/" class="nav-icon" title="Home">
-        <i data-lucide="home"></i>
-      </a>
-      <a href="/about/" class="nav-icon" title="About">
-        <i data-lucide="user"></i>
-      </a>
-      <a href="/projects/" class="nav-icon" title="Projects">
-        <i data-lucide="folder"></i>
-      </a>
-      <a href="/blog/" class="nav-icon" title="Blog">
-        <i data-lucide="rss"></i>
-      </a>
-    </nav>
+    gtag("config", "G-4GYKRC0Y77");
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 
-    <div class="content"><div class="info-panel">
-  <h1>Linkter AI: Semantic internal linking</h1>
-  <div class="article-info">
-    <span class="date">November 14, 2024</span>
-  </div>
-  <h2>Overview</h2>
-<p>Linkter is an advanced SaaS tool for building internal links within WordPress websites, leveraging cutting-edge AI and NLP technologies. Some of the challenges I've faced:</p>
+</head>
+
+<body>
+  <!-- Mobile menu button -->
+  <button class="mobile-menu-btn">
+    <i data-lucide="menu"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="vertical-nav">
+    <a href="/" class="nav-icon" title="Home">
+      <i data-lucide="home"></i>
+    </a>
+    <a href="/about/" class="nav-icon" title="About">
+      <i data-lucide="user"></i>
+    </a>
+    <a href="/projects/" class="nav-icon" title="Projects">
+      <i data-lucide="folder"></i>
+    </a>
+    <a href="/blog/" class="nav-icon" title="Blog">
+      <i data-lucide="rss"></i>
+    </a>
+  </nav>
+
+  <div class="content"><article class="article">
+  <!-- Article Header -->
+  <div class="info-panel">
+
+    <header class="article-header">
+      <h1 class="article-title">Linkter AI: Semantic internal linking</h1>
+
+      <div class="article-meta">
+        <div class="project-tags">
+          <span class="tag">Artificial Intelligence</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Pytorch</span>
+          <span class="tag">Python</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">AWS Lambda</span>
+          <span class="tag">AWS RDS</span>
+          <span class="tag">AWS DynamoDB</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">PythonSQLAlchemy</span>
+          <span class="tag">Microservices</span>
+          <span class="tag">SaaS</span>
+          <span class="tag">Redux</span>
+          <span class="tag">Figma</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <div class="article-content">
+      <p><img alt="Linkter AI Interface" src="/images/linkter.jpeg"></p>
+<h2>Overview</h2>
+<p>As lead developer of Linkter AI, I built a complete SaaS solution zero -&gt; one which solved the problem of internal linking. At this point it works only with WordPress websites, but we aim of supporting different CMS types such as Webflow, Shopify, Framer and others.</p>
+<h2>Technical Achievements</h2>
+<h3>Cloud Architecture</h3>
 <ul>
-<li>
-<p>To ensure scalability, I implemented lambda parallelization within AWS Step Functions, enabling concurrent content analysis across multiple websites.</p>
-</li>
-<li>
-<p>For accurate link recommendations, I combined scikit-learn(sklearn) NLP models with custom preprocessing and domain-specific rules, significantly enhancing keywording accuracy.</p>
-</li>
-<li>
-<p>Integration with WordPress required developing a custom plugin supporting complex scenarios like Elementor updates, authenticated via WP app passwords.</p>
-</li>
-<li>
-<p>Security was paramount; I implemented Fernet encryption for sensitive data like OpenAI API keys and GSC tokens before server storage.</p>
-</li>
-<li>
-<p>Deployment of sophisticated ML models necessitated custom bash scripts for EC2 instances, overcoming Lambda layer limitations.</p>
-</li>
-<li>
-<p>Analyzing website data in close to real-time requires lots of engineering compromises.</p>
-</li>
+<li>Designed and implemented scalable AWS infrastructure using Lambda, Step Functions, and EC2</li>
+<li>Built efficient data processing pipeline handling sites up to 5,000 pages</li>
+<li>Implemented cost-effective parallel processing for multi-site content analysis</li>
+<li>Deployed sophisticated ML models via custom EC2 configurations</li>
 </ul>
+<h3>Backend Development</h3>
+<ul>
+<li>Created Python/Flask microservices architecture</li>
+<li>Implemented secure data handling with Fernet encryption</li>
+<li>Built robust WordPress integration system</li>
+<li>Designed efficient PostgreSQL/DynamoDB hybrid storage solution</li>
+</ul>
+<h3>Frontend Implementation</h3>
+<ul>
+<li>Developed intuitive React/Redux interface reducing cognitive load</li>
+<li>Created custom components for specialized content analysis</li>
+<li>Built real-time preview and suggestion system</li>
+<li>Implemented responsive design supporting all devices</li>
+</ul>
+<h3>WordPress Integration</h3>
+<ul>
+<li>Developed lightweight plugin supporting complex page builders</li>
+<li>Implemented secure authentication via WP application passwords</li>
+<li>Created automated content synchronization</li>
+<li>Built robust error handling and recovery systems</li>
+</ul>
+<h2>Business Impact</h2>
+<ul>
+<li>Increased user engagement through improved content discovery</li>
+<li>Enhanced ad revenue via better internal navigation</li>
+<li>Improved search rankings for client target keywords</li>
+<li>Significantly reduced manual linking workload</li>
+</ul>
+<p><img alt="Linkter AI Interface" src="/images/linkter/wallpapper-02.jpeg"></p>
+<h2>Technical Stack</h2>
+<ul>
+<li><strong>Frontend:</strong> React, Redux, TypeScript</li>
+<li><strong>Backend:</strong> Python, Flask, SQLAlchemy</li>
+<li><strong>Infrastructure:</strong> AWS Lambda, Step Functions, RDS, DynamoDB, EC2</li>
+<li><strong>DevOps:</strong> Terraform, GitHub Actions</li>
+<li><strong>Design:</strong> Figma</li>
+</ul>
+<h2>Key Features</h2>
+<ul>
+<li>AI-powered content analysis</li>
+<li>Three-tier matching system (Exact, Partial, Contextual)</li>
+<li>Real-time link suggestions</li>
+<li>SEO optimization safeguards</li>
+<li>Visual relationship mapping</li>
+<li>Automated content processing</li>
+<li>Secure credential management</li>
+<li>Performance monitoring</li>
+<li>Scalable architecture</li>
+</ul>
+<p><img alt="Keyword semantic proximity" src="/images/linkter/graphic-01.png"></p>
+<h2>Development Process</h2>
+<p>Led end-to-end development from concept to deployment:</p>
+<ol>
+<li>Created initial design and wireframes</li>
+<li>Built MVP core functionality</li>
+<li>Implemented cloud infrastructure</li>
+<li>Developed WordPress integration</li>
+<li>Deployed monitoring and scaling systems</li>
+<li>Continuously improved based on user feedback</li>
+</ol>
+<h2>Results</h2>
+<p>The platform successfully processes thousands of pages across multiple websites, helping content creators:</p>
+<ul>
+<li>Discover relevant internal linking opportunities</li>
+<li>Improve site structure and SEO</li>
+<li>Increase page views and user engagement</li>
+<li>Save significant time on content optimization</li>
+</ul>
+<p><img alt="Keyword semantic proximity" src="/images/linkter/graphic-02.png"></p>
+    </div>
+  </div>
+</article>
 </div>
-</div>
-    <canvas id="glCanvas"></canvas>
+  <canvas id="glCanvas"></canvas>
 
-    <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
-    <script src="/theme/js/jellyfish.js"></script>
-    <script src="/theme/js/nav.js"></script>
-    <script src="/theme/js/tech-stack.js"></script>
-    <script>
-      lucide.createIcons();
-    </script>
-  </body>
+  <!-- credits: https://x.com/yuruyurau/status/1855984865080234183   -->
+  <script src="/theme/js/jellyfish.js"></script>
+  <script src="/theme/js/nav.js"></script>
+  <script src="/theme/js/tech-stack.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind(".article-content img", {
+      // options
+    });
+  </script>
+</body>
+
 </html>
