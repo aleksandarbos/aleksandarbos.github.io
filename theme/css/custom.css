@@ -315,7 +315,8 @@ h1 {
   }
 
   .vertical-nav.nav-open {
-    left: 0;
+    left: 0.5rem;
+    top: 1.0rem;
   }
 
   .nav-icon svg {
